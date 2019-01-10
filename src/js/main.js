@@ -1,0 +1,1 @@
+function modal(t){const e=document.querySelector(".modal");e&&window.addEventListener("click",function(t){if(t.target.closest(".button-modal"))e.classList.contains("active")?e.classList.remove("active"):e.classList.add("active");else if(t.target.closest(".modal.media")){if(!t.target.closest(".button.close"))return;e.classList.remove("active")}else e.classList.remove("active")})}
