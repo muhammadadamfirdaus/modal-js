@@ -28,21 +28,36 @@
 <div class="container">
   <main>
     <div class="wrapper">
-      <div class="button-modal">Hit Me!</div>
-      <div class="modal demo">
-        <div class="wrapper">
-          <h1>Hello World!</h1>
+      <div class="modal-1">
+        <div class="button-modal modal-a">Hit Me!</div>
+        <div class="modal demo modal-a">
+          <div class="wrapper">
+            <h1>Hello World!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="modal-2">
+        <div class="button-modal modal-b">B</div>
+        <div class="modal demo modal-b">
+          <div class="wrapper">
+            <h1>X</h1>
+          </div>
         </div>
       </div>
     </div>
   </main>
 </div>
-<script>
-  window.addEventListener('load', function(){
-    const buttonModal = document.querySelector('.button-modal');
-    modal(buttonModal);
-  });
-</script>
 <script src="js/main.js"></script>
+<script>
+  var modalButton = '.button-modal.modal-a';
+  var modalX = '.modal.modal-a';
+
+  modal(modalButton, modalX);
+  
+  var modalButton = '.button-modal.modal-b';
+  var modalX = '.modal.modal-b';
+
+  modal(modalButton, modalX);
+</script>
 </body>
 </html>
